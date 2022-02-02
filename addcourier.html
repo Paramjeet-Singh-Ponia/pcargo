@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="pcm.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+     <style>
+       .jumbotron{
+         height: 50px!important;
+         padding: 0;
+         margin: 0;
+       }
+       .navbar a{
+        padding-left: 9px!important;
+        padding-right: 9px!important;
+       }
+       .option a{
+         background-size: 15px!important;
+         justify-content: center;
+         text-align: center;
+         height: 100px;
+         width: 550px;
+         margin-left: 470px;
+       }
+
+       *{
+        padding: 0;
+        margin: 0;
+
+    }
+a:hover{
+color: blue!important;
+font-size: 16px
+}
+.rbx{
+    z-index: 1;
+}
+.futter a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-right: 2px solid orange;
+    padding: 0px;
+    padding-right: 8px;
+}
+.futter a ,.futter p{
+font-size: 10px;
+}
+.futter a:hover{
+    color: orange!important;
+} 
+.futter li{
+    display: inline;
+    padding: 5px;
+    list-style-type: none
+}
+.track-back{
+    background: url(pcm3.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 300px;
+    /* background-position: center; */
+    padding: 25px;
+}
+.tracker{
+    margin-left: 12px;
+    margin-top: 12px;
+    background-color: rgb(253, 253, 253);
+    border: 3px solid bla;
+    width: 400px;
+    opacity: 1;
+    border-radius: 30px;
+    padding: 20px;
+    align-content: center;
+    box-shadow:-10px 20px 10px 5px rgb(27, 26, 26);
+}
+
+     </style>
+  </head>
+<body>
+  <section id="navsection">
+    <nav class="navbar navbar-expand-md navbar-dark pr-3 pl-3 w-100 pt-2 pb-2" style="background: rgb(41, 36, 27);">
+      <a class="navbar-brand text-light font-weight-bold" href=""  ><span style="background: red; color: rgb(255, 255, 255); border-radius: 50%; padding-left: 20px; padding-right:20px; padding-top: 10px; padding-bottom: 10px; font-size: 20px;">P</span><span style="padding: 2px; color: blue; font-size: 28px">Cargo</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul id="menu" class="navbar-nav ml-auto font-weight-bold">
+        <li class="navbar-item pr-3 pl-3"><a class="nav-link active" href="pcargo.html">Home</a></li>
+        <li class="navbar-item  pr-3 pl-3"><a class="nav-link  " href="aboutus.html">About Us</a></li>
+        <li class="navbar-item pr-3 pl-3"><a class="nav-link " href="services.html">Service</a></li>
+        <li class="navbar-item pr-3 pl-3"><a class="nav-link " href="network.html">Network</a></li>
+        <li class="navbar-item pr-3 pl-3"><a class="nav-link " href="track.html">Tracking</a></li>
+        <li class="navbar-item pr-3 pl-3"><a class="nav-link " href="contactus.html">Contact Us</a></li>
+        <li class="navbar-item pr-3 pl-3"><a class="nav-link " href="enquiry.html">Enquiry</a></li>
+      </ul>
+       </div>
+    </nav>
+</section>
+    <div class="jumbotron">
+      <ul style="float: right; padding-top: 4px; display: inline-flex"> 
+        <li  class="navbar-item pr-3 pl-3" style="list-style-type: none; " ><a class="font-weight-bold btn btn-outline btn btn-outline-dark" style="background-color: orange;" class="nav-link " href="adminpanel.html">dashboard</a></li>
+        <li class="navbar-item pr-3 pl-3" style="list-style-type: none;" ><a class="font-weight-bold btn btn-outline btn btn-outline-dark" style="background-color: orange;" class="nav-link " href="pcargo.html">LogOut</a></li>
+    </ul>
+    </div>
+    <section>
+        <div class="container">
+            <h3>Add New Courier</h3> <hr>
+        <div>
+            <h5 class="text-danger">Sender Details</h5> <hr>
+            <form action=""> 
+                Sender Name : <input type="text" name="sender-name"> <br><br>
+                Sender Mobile : <input type="text" name="sender-name"> <br> <br>
+                Sender Email : <input type="text" name="sender-name"> <br> <br>
+                Sender Full Address : <input type="text" name="sender-name" style="height: 100px; width: 300px;"> <br> <br> <hr>
+            </form>
+            <h5 class="text-danger">Receiver Details</h5> <hr>
+            <form action=""> 
+                Reciever Name : <input type="text" name="sender-name"> <br><br>
+                Reciever Mobile : <input type="text" name="sender-name"> <br> <br>
+                Reciever Email : <input type="text" name="sender-name"> <br> <br>
+                Reciever Full Address : <input type="text" name="sender-name" style="height: 100px; width: 300px;"> <br> <br> <hr>
+            </form>
+            <h5 class="text-danger">Cost And Description Details</h5> <hr>
+            <form action=""> 
+                Total Cost : <input type="text" name="sender-name"> <br><br>
+                wight(in Kg) : <input type="text" name="sender-name"> <br><br>
+                Date : <input type="text" name="sender-name"> <br><br>
+                Description : <input type="text" name="sender-name" style="height: 100px; width: 300px;"> <br> <br> <hr>
+            </form>
+           <button class="btn btn-danger mr-5"><a  class="nav-link text-white" href="Tracking info.html">Submit</a></button>
+           <button class="btn btn-dark"><a  class="nav-link text-white" href="">Reset</a></button>
+<br><br>
+        </div>
+        </div>
+    </section>
+ <footer >
+      <div style="background-color: rgb(78, 77, 77); padding-top: 40px; padding-bottom: 40px;">
+      <div class="container"> 
+       <div class="row  pt-4 pb-1 futter">
+           <div class="col-md-6 text-white">
+              <p style="font-size: medium;">Poniascargomovers Copyright 2021-22, Ponia's Cargo All rights reserved</p>
+           </div>
+           <div class="col-md-6  text-center">
+             <ul>
+                 <li><a href="">Home</a></li>
+                 <li><a href="">About Us</a></li>
+                 <li><a href="">Service</a></li>
+                 <li><a href="">Network</a></li>
+                 <li><a href="">Tracking</a></li>
+                 <li><a href="">Contact Us</a></li>
+                 <li><a href="">Enquiry</a></li>
+                 <li><a href="">E-mail Login</a></li>
+             </ul>
+           </div>
+       </div>
+      </div>
+  </div>
+  </footer>
+  <script src="pcm.js"></script>
+  
+</body>
+</html>
